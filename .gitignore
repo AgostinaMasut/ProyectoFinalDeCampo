@@ -1,0 +1,12 @@
+/LolaApp.WebUI/packages
+/LolaApp.WebUI/LolaApp.WebUI/obj
+/LolaApp.WebUI/LolaApp.WebUI/bin
+/LolaApp.WebUI/LolaApp.Services/bin
+/LolaApp.WebUI/LolaApp.Services/obj
+/LolaApp.WebUI/LolaApp.Entities/obj
+/LolaApp.WebUI/LolaApp.Entities/bin
+/LolaApp.WebUI/LolaApp.DataAccess/obj
+/LolaApp.WebUI/LolaApp.DataAccess/bin
+/LolaApp.WebUI/LolaApp.Core/obj
+/LolaApp.WebUI/LolaApp.Core/bin
+*.user
