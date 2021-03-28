@@ -21,6 +21,8 @@ namespace ProyectoFinalDeCampo.Modulo1.Controllers
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
+            var hola = "hola";
+            Console.WriteLine(hola);
         }
 
         [HttpGet]
