@@ -8,6 +8,8 @@ namespace LolaApp.Entities
 
         public string Denominacion { get; set; }
 
+        public bool Deshabilitado { get; set; }
+
     }
 
 }

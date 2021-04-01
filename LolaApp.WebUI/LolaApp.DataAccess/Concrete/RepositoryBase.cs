@@ -40,11 +40,20 @@ namespace LolaApp.DataAccess.Concrete
 
         public T Update(T entity)
         {
-            if (_repositoryContext.Entry(entity).State == EntityState.Modified) {
-                _repositoryContext.SaveChanges();
+             
+            var entry = _repositoryContext.Entry(entity);
+            if (entry.State == EntityState.Unchanged)
+            {
+
+                return entity;
             }
-            
-           
+
+            if (entry.State == EntityState.Detached)
+            {
+                //entry = _repositoryContext.Entry(_repositoryContext.Set<T>._Attach(entity));
+                entry.State = EntityState.Modified;
+            }
+            _repositoryContext.SaveChanges();
             return entity;
         }
 

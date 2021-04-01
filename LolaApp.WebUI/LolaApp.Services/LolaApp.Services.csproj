@@ -42,7 +42,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstractions\ISexoService.cs" />
+    <Compile Include="Abstractions\ServiceBase.cs" />
+    <Compile Include="DataServices\SexoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\LolaApp.Core\LolaApp.Core.csproj">
+      <Project>{9d3d46a2-5416-4f2c-bad1-b8db46f15b5a}</Project>
+      <Name>LolaApp.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LolaApp.DataAccess\LolaApp.DataAccess.csproj">
+      <Project>{338604e4-56a8-4f71-a8c7-cc1668691c4a}</Project>
+      <Name>LolaApp.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LolaApp.Entities\LolaApp.Entities.csproj">
+      <Project>{c50a881b-7405-407a-87b3-2ef644aa9c19}</Project>
+      <Name>LolaApp.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

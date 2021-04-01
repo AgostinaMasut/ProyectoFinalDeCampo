@@ -56,7 +56,8 @@
     <Compile Include="Abstractions\Repositories\ITipoDeUsuarioRepository.cs" />
     <Compile Include="Abstractions\Repositories\IUsuarioRepository.cs" />
     <Compile Include="Concrete\RepositoryBase.cs" />
-    <Compile Include="LolaApppContext.cs" />
+    <Compile Include="LolaAppContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Abstractions\Repositories\ISexoRepository.cs" />
     <Compile Include="Replositories\SexoRepository.cs" />
