@@ -177,7 +177,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Login\46493590_1933393440289812_4354736374423748608_n.jpg" />
+    <Content Include="Content\Images\46493590_1933393440289812_4354736374423748608_n.jpg" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -190,9 +190,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Views\Login\lolahair.jpg" />
+    <Content Include="Content\Images\lolahair.jpg" />
     <Content Include="Content\Site.css" />
-    <Content Include="Views\Shared\styleLogin.css" />
+    <Content Include="Content\styleLogin.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />

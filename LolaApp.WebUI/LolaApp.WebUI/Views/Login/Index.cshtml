@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<LolaApp.WebUI.Models.LoginViewModel>
 @{
     ViewBag.Title = "Login";
-    Layout = "~/Views/Shared/styleLogin.css";
+    Layout = null;
 }
 
 <!DOCTYPE html>
@@ -10,22 +10,22 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Login</title>
+    <link href="@Url.Content("~/Content/styleLogin.css")" rel="stylesheet" />
 </head>
 <body>
-    <body>
         <div class="wrapper fadeInDown">
             <div id="formContent">
                 <!-- Tabs Titles -->
                 <!-- Icon -->
                 <div class="fadeIn first">
-                    <img src="46493590_1933393440289812_4354736374423748608_n.jpg" id="icon" alt="User Icon" width="160" height="75" />
-                    <img src="lolahair.jpg" id="icon" alt="User Icon" width="160" height="75" />
+                    <img src="@Url.Content("~/Content/Images/46493590_1933393440289812_4354736374423748608_n.jpg")" id="icon" alt="User Icon" width="160" height="75" />
+                    <img src="@Url.Content("~/Content/Images/lolahair.jpg")" id="icon" alt="User Icon" width="160" height="75" />
                 </div>
 
                 <!-- Login Form -->
                 <form>
                     <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario">
-                    <input type="text" id="password" class="fadeIn third" name="login" placeholder="Contraseña">
+                    <input type="text" id="password" class="fadeIn third" name="password" placeholder="Contraseña">
                     <input type="submit" class="fadeIn fourth" value="Ingresar">
                 </form>
 
@@ -36,6 +36,5 @@
 
             </div>
         </div>
-    </body>
 </body>
 </html>
