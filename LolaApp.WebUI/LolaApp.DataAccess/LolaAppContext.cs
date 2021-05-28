@@ -12,13 +12,14 @@ namespace LolaApp.DataAccess
 {
     public class LolaAppContext : DbContext
     {
+
         public LolaAppContext() : base("CS")
         {
 
         }
         protected override void OnModelCreating(DbModelBuilder dbModelBuilder)
         {
-            dbModelBuilder.Conventions.Remove<PluralizingTableNameConvention>();            
+            dbModelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
         public DbSet<Sexo> Sexo { get; set; }
         public DbSet<TipoDeUsario> TipoDeUsario { get; set; }
